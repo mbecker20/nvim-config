@@ -14,7 +14,12 @@ return {
           vim.keymap.set("n", "<leader>rh", rt.hover_actions.hover_actions, { buffer = buffer, desc = "rust hover actions" })
           vim.keymap.set("n", "<leader>rc", rt.code_action_group.code_action_group, { buffer = buffer, desc = "rust code actions" })
         end,
-      }
+      },
+      tools = {
+        hover_actions = {
+          auto_focus = true
+        }
+      },
     })
   end
 }
