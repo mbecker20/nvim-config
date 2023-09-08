@@ -29,9 +29,9 @@ return {
 
     wk.register({
       f = {
-        name = "file", -- optional group name
-        f = { "<cmd>Telescope find_files<cr>", "Find File" },
-        r = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" },
+        name = "find", -- optional group name
+        f = { "<cmd>Telescope find_files<cr>", "Find file" },
+        r = { "<cmd>Telescope oldfiles<cr>", "Open recent file" },
         s = { "<cmd>Telescope live_grep<cr>", "Find string" },
         c = { "<cmd>Telescope grep_string<cr>", "Find string under cursor" }
       },

@@ -11,7 +11,7 @@ return {
     local wk = require("which-key")
 
     wk.register({
-      p = {
+      c = {
         name = "crates",
         t = { crates.toggle, "toggle" },
         r = { crates.reload, "reload" },
