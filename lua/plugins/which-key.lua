@@ -8,6 +8,8 @@ return {
   config = function()
     local wk = require("which-key")
 
+    wk.setup({})
+
     wk.register({
       s = {
         name = "split",
