@@ -3,6 +3,7 @@ return {
   dependencies = {
     "williamboman/mason-lspconfig.nvim",
     "jayp0521/mason-null-ls.nvim",
+    "jose-elias-alvarez/null-ls.nvim"
   },
   config = function()
     local mason = require("mason")
@@ -27,7 +28,8 @@ return {
         "tailwindcss",
         "lua_ls",
         "pyright",
-        "rust_analyzer"
+        "rust_analyzer",
+        "dockerls"
       },
       automatic_installation = true,
     })
