@@ -7,4 +7,4 @@ brew install neovim ripgrep lazygit rust-analyzer tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # set local .tmux.conf
-cp ~/.config/nvim/.tmux.conf
+cp ~/.config/nvim/.tmux.conf ~/.tmux.conf
