@@ -10,9 +10,9 @@ return {
 
     rt.setup({
       server = {
-        on_attach = function(_, buffer)
-          vim.keymap.set("n", "<leader>rh", rt.hover_actions.hover_actions, { buffer = buffer, desc = "rust hover actions" })
-          vim.keymap.set("n", "<leader>rc", rt.code_action_group.code_action_group, { buffer = buffer, desc = "rust code actions" })
+        on_attach = function(_, bufnr)
+          vim.keymap.set("n", "<leader>rh", rt.hover_actions.hover_actions, { buffer = bufnr, desc = "rust hover actions" })
+          vim.keymap.set("n", "<leader>rc", rt.code_action_group.code_action_group, { buffer = bufnr, desc = "rust code actions" })
         end,
         standalone = false,
       },

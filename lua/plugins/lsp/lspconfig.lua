@@ -8,7 +8,7 @@ return {
     local lspconfig = require("lspconfig")
     local cmp_nvim_lsp = require("cmp_nvim_lsp")
 
-    local on_attach = function(client, buffer) {
+    local on_attach = function(client, bufnr) {
       
     }
   end
