@@ -29,7 +29,7 @@ return {
 					r = { vim.lsp.buf.rename, "Rename Symbol" },
 					l = { vim.diagnostic.open_float, "Line Diagnostics" },
 					d = {
-						vim.lsp.buf.declaration,
+						"<cmd>tab split | lua vim.lsp.buf.definition()<cr>",
 						"Go to Definition",
 					},
 				},
