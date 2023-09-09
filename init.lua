@@ -18,7 +18,6 @@ require("lazy").setup({
   { import = "plugins.base" },
   { import = "plugins.cmp" },
   { import = "plugins.lsp" },
-  -- { import = "plugins.lspconfig" },
 }, {
   install = {
     colorscheme = { "nightfly" },

@@ -22,14 +22,14 @@ return {
 
     mason_lspconfig.setup({
       ensure_installed = {
+        "rust_analyzer",
+        "dockerls",
         "tsserver",
         "html",
         "cssls",
         "tailwindcss",
-        "lua_ls",
         "pyright",
-        "rust_analyzer",
-        "dockerls"
+        "lua_ls",
       },
       automatic_installation = true,
     })
