@@ -33,6 +33,7 @@ return {
 						"<cmd>tab split | lua vim.lsp.buf.definition()<cr>",
 						"Go to Definition",
 					},
+					f = { vim.lsp.buf.format, "Format" },
 				},
 			}, { prefix = "<leader>", buffer = bufnr, silent = true, noremap = true })
 
