@@ -5,6 +5,6 @@ return {
 
 		keymap.set("n", "<leader>j", "<cmd>FloatermNew --height=0.8 --width=0.8<cr>", { desc = "Open floaterm" })
 		keymap.set("n", "<leader>g", "<cmd>FloatermNew --height=0.8 --width=0.8 lazygit<cr>", { desc = "Open lazygit" })
-		keymap.set("n", "<leader>r", "<cmd>FloatermNew --height=0.8 --width=0.8 run .<cr>", { desc = "Open runnables" })
+		keymap.set("n", "<leader>r", "<cmd>FloatermNew --height=0.8 --width=0.8 run<cr>", { desc = "Open runnables" })
 	end,
 }
