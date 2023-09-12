@@ -20,7 +20,6 @@ return {
 					name = "lsp",
 					S = { ":LspRestart<cr>", "Restart LSP" },
 					R = { "<cmd>Telescope lsp_references<cr>", "References" },
-					-- D = { "<cmd>Telescope lsp_definitions<cr>", "Definitions" },
 					i = { "<cmd>Telescope lsp_implementations<cr>", "Implementations" },
 					t = { "<cmd>Telescope lsp_type_definitions<cr>", "Type Definitions" },
 					p = { "<cmd>Telescope diagnostics bufnr=0<cr>", "Problems" },
@@ -33,6 +32,10 @@ return {
 					d = {
 						"<cmd>tab split | lua vim.lsp.buf.definition()<cr>",
 						"Go to Definition",
+					},
+					D = {
+						"<cmd>vsp | lua vim.lsp.buf.definition()<cr>",
+						"Split to Definition",
 					},
 				},
 			}, { prefix = "<leader>", buffer = bufnr, silent = true, noremap = true })
