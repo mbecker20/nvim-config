@@ -5,6 +5,7 @@ return {
 		"nvim-lua/plenary.nvim",
 		{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 		"nvim-tree/nvim-web-devicons",
+		"folke/which-key.nvim",
 	},
 	config = function()
 		local telescope = require("telescope")
