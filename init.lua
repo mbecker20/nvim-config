@@ -20,9 +20,9 @@ require("lazy").setup({
 	{ import = "plugins.lsp" },
 	{ import = "plugins.treesitter" },
 }, {
-	install = {
-		colorscheme = { "nightfly" },
-	},
+	-- install = {
+	-- 	colorscheme = { "nightfly" },
+	-- },
 	checker = {
 		enabled = true,
 		notify = false,
