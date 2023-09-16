@@ -5,6 +5,9 @@ return {
 		{ "antosha417/nvim-lsp-file-operations", config = true },
 		"folke/which-key.nvim",
 	},
+	opts = {
+		inlay_hints = { enabled = true },
+	},
 	config = function()
 		local lspconfig = require("lspconfig")
 		local cmp_nvim_lsp = require("cmp_nvim_lsp")
@@ -59,6 +62,13 @@ return {
 		lspconfig["rust_analyzer"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
+			settings = {
+				["rust-analyzer"] = {
+					check = {
+						command = "clippy",
+					},
+				},
+			},
 		})
 
 		lspconfig["dockerls"].setup({
