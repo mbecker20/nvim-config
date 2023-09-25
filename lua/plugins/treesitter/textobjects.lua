@@ -42,6 +42,14 @@ return {
 						["<leader>op"] = "@parameter.inner",
 					},
 				},
+				move = {
+					goto_next = {
+						["]c"] = "@conditional.outer",
+					},
+					goto_previous = {
+						["[c"] = "@conditional.outer",
+					},
+				},
 			},
 		})
 	end,

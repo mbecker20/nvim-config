@@ -35,7 +35,7 @@ return {
 				r = { "<cmd>Telescope oldfiles<cr>", "Open recent file" },
 				s = { "<cmd>Telescope live_grep<cr>", "Find string" },
 				c = { "<cmd>Telescope grep_string<cr>", "Find string under cursor" },
-				b = { "<cmd>Telescope buffer<cr>", "Show buffers" },
+				b = { "<cmd>Telescope buffers<cr>", "Show buffers" },
 			},
 		}, { prefix = "<leader>" })
 	end,

@@ -59,6 +59,30 @@ return {
 			vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 		end
 
+		-- Add border to floating windows
+		vim.cmd([[autocmd! ColorScheme * highlight NormalFloat guibg=#1f2335]])
+		vim.cmd([[autocmd! ColorScheme * highlight FloatBorder guifg=white guibg=#1f2335]])
+
+		local border = {
+			{ "◸", "FloatBorder" },
+			{ "-", "FloatBorder" },
+			{ "◹", "FloatBorder" },
+			{ "▕", "FloatBorder" },
+			{ "◿", "FloatBorder" },
+			{ "-", "FloatBorder" },
+			{ "◺", "FloatBorder" },
+			{ "▏", "FloatBorder" },
+		}
+
+		local orig_util_open_floating_preview = vim.lsp.util.open_floating_preview
+		function vim.lsp.util.open_floating_preview(contents, syntax, o, ...)
+			o = o or {}
+			o.border = o.border or border
+			return orig_util_open_floating_preview(contents, syntax, o, ...)
+		end
+
+		-- language specifics
+
 		lspconfig["rust_analyzer"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
