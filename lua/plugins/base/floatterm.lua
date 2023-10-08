@@ -13,7 +13,7 @@ return {
 			r = {
 				name = "run",
 				r = { "<cmd>FloatermNew --height=0.8 --width=0.8 run<cr>", "run" },
-				s = { "<cmd>FloatermNew --height=0.8 --width=0.8 run --search<cr>", "run (search)" },
+				s = { '<cmd>FloatermNew --height=0.8 --width=0.8 run --search ""<cr>', "run (search)" },
 			},
 		}, { prefix = "<leader>" })
 	end,
