@@ -29,6 +29,15 @@ return {
 				"dockerfile",
 				"gitignore",
 			},
+			incremental_selection = {
+				enable = true,
+				keymaps = {
+					init_selection = "<C-space>",
+					node_incremental = "<C-space>",
+					node_decremental = "<bs>",
+					scope_incremental = false,
+				},
+			},
 			context_commentstring = {
 				enable = true,
 				enable_autocmd = false,
